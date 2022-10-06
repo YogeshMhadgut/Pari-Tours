@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/* 197 */
+.fa-star:before {
+  content: "\f005";
+}
+
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* 427 */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* 472 */
+.fa-share:before {
+  content: "\f064";
+}
+
+/* 516 */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* 575 */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* 614 */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* 626 */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* 629 */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* 767 */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* 782 */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* 800 */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* 913 */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* 916 */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* 1199 */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-plane:before {
+  content: "\f072";
+}
+
+.fa-phone-square::before {
+  content: "\f098";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}

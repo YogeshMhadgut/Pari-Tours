@@ -1,0 +1,2159 @@
+/* to be removed later */
+.travel-valid {
+  display: none;
+}
+
+.scroll_top {
+  background-color: var(--white);
+}
+/* -------- custom scrollbar chrome------- */
+
+.scrollbarChrome::-webkit-scrollbar,
+.autosuggest__results-container::-webkit-scrollbar {
+  width: 7px;
+  background: hsla(0, 29%, 97%, 0.34) !important;
+  margin-right: 1px;
+}
+
+.scrollbarChrome::-webkit-scrollbar-thumb,
+.autosuggest__results-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.45) !important;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 10px;
+}
+
+.scrollbarChrome::-webkit-scrollbar-track,
+.autosuggest__results-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: hsla(0, 3%, 47%, 0.35) !important;
+}
+
+.scrollbarChrome_sharp::-webkit-scrollbar-track,
+.autosuggest__results-container::-webkit-scrollbar-track,
+.scrollbarChrome::-webkit-scrollbar-track,
+.autosuggest__results-container::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+/* header / footer / side nav end */
+/* css for sprite */
+[class*="menu-icon-"],
+[class*="mob-icon-"],
+[class*="desk-icon-"] {
+  background-image: url("../img/desktop-sprite.png");
+  background-size: 678px 145px;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.desk-icon-menu {
+  background-position: -164px 0;
+  width: 20px;
+  height: 13px;
+}
+
+.desk-icon-footer-location-pin {
+  background-position: -109px -29px;
+  width: 19px;
+  height: 24px;
+}
+
+.desk-icon-footer-phone {
+  background-position: -129px -29px;
+  width: 19px;
+  height: 20px;
+}
+
+.desk-icon-footer-enevlope {
+  background-position: -149px -29px;
+  width: 20px;
+  height: 16px;
+}
+
+.desk-icon-call {
+  background-position: -56px -30px;
+  width: 17px;
+  height: 17px;
+}
+.desk-icon-fb,
+.desk-icon-tweet,
+.desk-icon-blog,
+.desk-icon-insta {
+  width: 36px;
+  height: 36px;
+}
+
+.desk-icon-fb {
+  background-position: -208px -104px;
+}
+
+.desk-icon-insta {
+  background-position: -246px -104px;
+}
+
+.desk-icon-tweet {
+  background-position: -285px -104px;
+}
+
+.desk-icon-youtube {
+  background-position: -324px -103px;
+  width: 37px;
+  height: 37px;
+}
+
+.desk-icon-blog {
+  background-position: -366px -104px;
+}
+
+.desk-icon-appStore-goggle {
+  background-position: 0 -104px;
+  width: 98px;
+  height: 28px;
+}
+.pipeline {
+  padding: 0 5px;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* CSS for header */
+.topnav_fix {
+  background: #ffffff;
+  position: relative;
+  padding: 8px 0;
+}
+.topnav_menuIcon {
+  text-align: center;
+  background-color: #39c9bb;
+  height: 40px;
+  width: 40px;
+  line-height: 36px;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.topnav_menuIcon:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.call-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.call {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #39c9bb;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 4px 10px;
+}
+a.call:hover {
+  text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+.hdrMenu_link {
+  padding: 15px 20px 15px 45px;
+  color: var(--black);
+  font-size: 1rem;
+  display: block;
+}
+.hdrMenu_link:hover {
+  color: var(--dark);
+  background: var(--off-white);
+}
+
+@media (max-width: 767px) {
+  .topnav_menuIcon {
+    height: 36px;
+    width: 36px;
+  }
+  .topnav_link {
+    margin: 0 10px;
+    padding: 3px 8px;
+    border-radius: 50px;
+  }
+  .logo_mrgnTop >>> img {
+    margin-top: 6px !important;
+  }
+  .call-div {
+    justify-content: center;
+  }
+  .call {
+    padding: 6px 9px;
+  }
+}
+
+/* css for footer */
+.semi-ellipse-curve {
+  display: inline-block;
+  width: 138px;
+  height: 35px;
+  transform: rotate(180deg) translateX(50%);
+  text-align: center;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='138' height='35' viewBox='0 0 138 35'%3E%3Cpath fill='%23fff' d='M 3.15027 34.4375C 1.74207 34.6025 0.68396 34.7266 0 35L 68.9982 35C 68.9982 35 68.9998 28.6387 69 19.5132C 69 20.7261 69.0001 21.8892 69.0001 22.9956L 69.0018 35L 138 35C 137.316 34.7266 136.258 34.6025 134.85 34.4375C 131.11 33.9995 124.903 33.2729 116.678 28.6875C 111.015 25.3901 106.523 20.9771 102.07 16.6025C 93.5474 8.23096 85.1685 -1.97984e-15 69.0018 3.55056e-31C 69.0006 5.271 69 10.4292 69 15.0952C 69 10.4287 68.9994 5.27148 68.9982 3.55056e-31C 52.8314 1.97986e-15 44.4526 8.23096 35.9302 16.6025C 31.4772 20.9771 26.985 25.3901 21.3221 28.6875C 13.0974 33.2729 6.88965 33.9995 3.15027 34.4375Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.dFooter {
+  background-color: #fafbfe;
+  border-top: var(--border-e1);
+  overflow: hidden;
+}
+.dFooter_address,
+.dFooter_staticLink {
+  border-top: var(--border-e1);
+}
+.dFooter_card,
+.dFooter_card-border {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100%;
+}
+.dFooter_card-border {
+  border-right: var(--border-e1);
+}
+.align_center-XY {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align_payment-opt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.dFooter_card-30 {
+  flex-basis: 30%;
+}
+.dFooter_card-70 {
+  flex-basis: 70%;
+}
+.socialIcon {
+  filter: grayscale(100%);
+}
+.socialIcon:hover {
+  filter: grayscale(0);
+}
+.staticPg {
+  padding-left: 40px;
+}
+.staticPg_link {
+  display: block;
+  padding: 5px 0;
+  font-size: 0.875rem;
+  color: var(--black);
+  font-weight: 700;
+  transition: ease 0.3s;
+}
+.staticPg_link-bold {
+  background: #e1e1e1;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin: 3px 0 0 -3px;
+}
+.staticPg_link:hover {
+  margin-left: 2px;
+  color: #1a222f;
+}
+.dFooter_Fixed {
+  position: relative;
+  padding: 1.25rem;
+  background-color: #2c3544;
+}
+.dFooter_viewMore {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 162px;
+  height: 100px;
+  cursor: pointer;
+  text-align: center;
+}
+.dFooter_viewMore_curve {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+}
+.dFooter_viewMore_angleDown {
+  transform: rotate(90deg);
+}
+.rotate270 {
+  transform: rotate(270deg);
+}
+.dFooter_viewMore:hover .dFooter_viewMore_angleDown {
+  margin-top: 5px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.dFooter_membersOf {
+  mix-blend-mode: multiply;
+}
+
+/* for whatsapp only */
+.card-border {
+  border-right: var(--border-e1);
+  height: 100%;
+}
+.group-whatsapp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.group-whatsapp > a {
+  padding: 5px;
+  color: #313131;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  border: var(--border-e1);
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.group-whatsapp > a {
+  border: 1px solid #25d366;
+}
+.group-whatsapp > a:last-child {
+  border: 1px solid #0088cc;
+  margin: 0;
+}
+
+.group-whatsapp > a > span {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.modal-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.modal-button > button {
+  color: white;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.topnav_fix .modal {
+  top: 20%;
+}
+@media (max-width: 767px) {
+  .align_payment-opt {
+    flex-direction: column;
+    text-align: center;
+  }
+  .align_payment-opt > .w-20 {
+    width: 100% !important;
+  }
+  .mrgn-tobB {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .staticPg {
+    padding-left: 0;
+  }
+  .dFooter_card,
+  .dFooter_card-border {
+    align-content: flex-start;
+  }
+  .dFooter_card-border {
+    border-right: none;
+  }
+  .staticPg_link {
+    font-size: 0.825rem;
+    font-weight: normal;
+  }
+  .modal-button > button {
+    color: inherit;
+  }
+}
+
+/* ----for sprite---- */
+.mob-icon-avtar {
+  background-position: 0 -26px;
+  width: 38px;
+  height: 38px;
+}
+.menu-icon-bookings {
+  background-position: 0 0;
+  width: 12px;
+  height: 20px;
+}
+.menu-icon-payment {
+  background-position: -14px 0;
+  width: 20px;
+  height: 14px;
+}
+.menu-icon-announce {
+  background-position: -36px 0;
+  width: 20px;
+  height: 18px;
+}
+.menu-icon-blog {
+  background-position: -58px 0;
+  width: 20px;
+  height: 16px;
+}
+.menu-icon-europe {
+  background-position: -80px 0;
+  width: 20px;
+  height: 20px;
+}
+.menu-icon-dest_guide {
+  background-position: -102px 0;
+  width: 18px;
+  height: 20px;
+}
+.menu-icon-offers {
+  background-position: -122px 0;
+  width: 20px;
+  height: 18px;
+}
+.menu-icon-disneyland {
+  background-position: -144px 0;
+  width: 18px;
+  height: 26px;
+}
+.menu-icon-ham_white {
+  background-position: -164px 0;
+  width: 20px;
+  height: 13px;
+}
+.mob-icon-google-play {
+  background-position: 0 -104px;
+  width: 98px;
+  height: 28px;
+}
+.mob-icon-apple-store {
+  background-position: -100px -104px;
+  width: 97px;
+  height: 28px;
+}
+.menu-icon-flight {
+  background-position: -477px -0px;
+  width: 24px;
+  height: 16px;
+}
+.menu-icon-package {
+  background-position: -521px -0px;
+  width: 24px;
+  height: 16px;
+}
+.menu-icon-hotel {
+  background-position: -547px -0px;
+  width: 24px;
+  height: 16px;
+}
+.menu-icon-bus {
+  background-position: -617px -0px;
+  width: 24px;
+  height: 16px;
+}
+.menu-icon-transfer {
+  background-position: -655px -0px;
+  width: 24px;
+  height: 16px;
+}
+.menu-icon-sightseeing {
+  background-position: -591px 0px;
+  width: 24px;
+  height: 16px;
+}
+.menu-icon-cruise {
+  background-position: -236px -78px;
+  width: 26px;
+  height: 25px;
+}
+.menu-icon-home {
+  background-position: -442px -0px;
+  width: 16px;
+  height: 16px;
+}
+.menu-icon-services {
+  background-position: -460px -0px;
+  width: 16px;
+  height: 16px;
+}
+.menu-icon-traveldeals {
+  background-position: -390px -0px;
+  width: 16px;
+  height: 16px;
+}
+.menu-icon-hidea {
+  background-position: -346px -76px;
+  width: 18px;
+  height: 16px;
+}
+.desk-icon-toTop {
+  background-position: -325px -35px;
+  width: 14px;
+  height: 8px;
+}
+/* ----side menu---- */
+.hdrMenu {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--white);
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  transform: translateX(-100%);
+  overflow-y: auto;
+  z-index: 1050;
+}
+.hdrMenu,
+.hdrMenu-open,
+.hdrMenu_overlay {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.hdrMenu-open {
+  transform: translateX(0);
+}
+.hdrMenu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1049;
+}
+.hdrMenu_overlay-open {
+  opacity: 1;
+  visibility: visible;
+}
+.hdr_overlay-deskview {
+  background: rgba(255, 255, 255, 0);
+}
+.hdrMenu_close-btn {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  background: transparent;
+  color: var(--gray);
+  font-size: 2rem;
+}
+.hdrMenu_user {
+  padding: 30px;
+  background: var(--off-white);
+  border-bottom: var(--border-f0);
+}
+.hdrMenu_list {
+  border-bottom: var(--border-f0);
+}
+.hdrMenu_icon {
+  width: 40px;
+  margin-right: 15px;
+}
+.hdrMenu_link {
+  padding: 15px 20px 15px 45px;
+  color: var(--black);
+  font-size: 1rem;
+  display: block;
+}
+.hdrMenu_link:hover {
+  color: var(--dark);
+  background: var(--off-white);
+}
+.hdrMenu_quickLink {
+  padding: 15px 60px;
+}
+.hdrMenu_quickLink-title {
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+}
+.hdrMenu_quickLink-title:before,
+.hdrMenu_quickLink-title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  border-bottom: var(--border-e1);
+}
+.hdrMenu_quickLink-title:before {
+  left: 0;
+}
+.hdrMenu_quickLink-title:after {
+  right: 0;
+}
+.hdrMenu_stores {
+  border-top: var(--border-f0);
+  background: var(--off-white);
+  color: var(--dark);
+  font-size: 0.6875rem;
+  padding: 10px 15px;
+  text-align: center;
+}
+.hdrMenu_ftr-btn {
+  color: var(--white);
+  font-size: 0.8125rem;
+  border-radius: 50px;
+  min-width: 140px;
+}
+.hdrMenu_ftr-btn--orange {
+  background: #ed462b;
+}
+.hdrMenu_ftr-btn--blue {
+  background: #2e3848;
+}
+.hdrMenu_ftr-btn--teal {
+  background: var(--teal);
+}
+.pdd_R0 > li > a {
+  padding-right: 0;
+}
+.overflow-body {
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .hdrMenu {
+    max-width: 250px;
+  }
+  .hdrMenu_user {
+    padding: 20px 15px;
+  }
+  .hdrMenu_link {
+    padding: 15px;
+    font-size: 0.8125rem;
+  }
+  .hdrMenu_quickLink {
+    padding: 15px;
+  }
+}
+/* header / footer / side nav end */
+
+@media (max-width: 767px) {
+  .bc-mob {
+    padding: 6px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    display: -webkit-inline-box;
+  }
+}
+
+/* main content */
+.parallax {
+  background-image: url("../img/traveldeals-main-img.jpg");
+  height: 18.75rem;
+  position: relative;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.parallax > .bg-head,
+.paralH > .bg-head {
+  background: rgba(0, 0, 0, 0.5%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.parallax > .bg-head > .heading,
+.paralH > .bg-head > .heading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 95%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.09375rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.paralH > .bg-head > .heading {
+  top: 65%;
+}
+
+.heading.text-shadow {
+  text-shadow: 0 5px 4px rgb(0 0 0 / 75%);
+}
+
+.section-padding {
+  padding: 3.125rem 0;
+  background: #f4f4f4;
+  position: relative;
+}
+
+.text-para {
+  text-align: justify;
+  color: #8a8a8a;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+}
+
+#more {
+  display: none;
+  margin-top: 1rem;
+}
+
+a.readmore {
+  color: #4db6ac !important;
+  cursor: pointer;
+  float: right;
+}
+
+/* new css start --------------------------------------- */
+
+.block-main {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+}
+
+.block-header {
+  padding: 0.75rem 0.54rem;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(77 182 172 / 0.38);
+}
+
+.arrow-down {
+  font-size: 1.25rem;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  outline: none;
+  float: right;
+  background: #4db6ac;
+  color: #fff;
+  padding: 0 0.5rem;
+}
+
+.arrow-down:focus {
+  outline: none;
+}
+
+.block-header[aria-expanded="false"] > .arrow-down > i {
+  transition: ease 0.3s;
+  transform: rotate(180deg);
+}
+
+.block-header[aria-expanded="true"] > .arrow-down > i {
+  transition: ease 0.3s;
+}
+
+.panel-collapse {
+  padding: 0.75rem 0px;
+}
+
+h2.sub-heading {
+  color: #4db6ac;
+  margin-top: 0;
+  font-size: 1.375rem;
+  text-transform: capitalize;
+}
+
+h3.sec-heading {
+  font-size: 1.25rem;
+  color: #4db6ac;
+  margin: 0;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.view-btn {
+  font-size: 0.75rem;
+  color: #4db6ac;
+  border-color: #4db6ac;
+  border-radius: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  position: absolute;
+  right: 75%;
+}
+
+.view-btn:hover {
+  color: #fff;
+  background: #4db6ac;
+}
+
+.pkg-outer > h3 {
+  font-size: 1.125rem;
+}
+
+.pkg-outer > .pkg-inclusion {
+  margin: 0.5rem 0;
+  font-size: 0.8125rem;
+}
+
+.pkg-outer.pkg-inclusion > span {
+  color: #4db6ac;
+}
+
+.btn-outline-info,
+.pkg-outer .btn-outline-info,
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #4db6ac;
+  border-color: #4db6ac;
+  border-radius: 0;
+}
+
+.pkg-outer:hover > .btn-outline-info,
+.pkg-outer > .btn-outline-info:hover {
+  color: #fff;
+  border-color: #4db6ac;
+  background: #4db6ac;
+}
+
+/* buttons */
+a:not([href]):not([tabindex]) {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-image: none;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btn-default .badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary .badge {
+  color: #428bca;
+  background-color: #ffffff;
+}
+
+.btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #47a447;
+  border-color: #398439;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #ffffff;
+}
+
+.btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #39b3d7;
+  border-color: #269abc;
+}
+
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background-image: none;
+}
+
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.btn-info .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+
+.btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .view-btn {
+    right: 15%;
+  }
+  .tab-align .nav-pills .nav-item > .nav-link > img {
+    margin: 0;
+  }
+  /* .tab-align .nav-pills .nav-item > .nav-link > span {
+    display: none;
+  } */
+}
+
+/* new css end --------------------------------------- */
+
+/* --------------------------------------tabs */
+
+.tab-align {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.tab-align > ul {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.tab-align > .nav {
+  display: -webkit-inline-box;
+}
+
+.tab-align .nav-pills .nav-item {
+  color: #fff;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  margin-right: 0.125rem;
+  padding: 0.5rem 0.5rem;
+  background-color: rgb(50 50 50 / 0.85);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.holiday {
+  display: flex;
+}
+
+.tab-align .nav-pills .nav-link,
+.holiday .nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.holiday .nav-pills .nav-item {
+  font-size: 0.835rem;
+  color: #454545;
+  background-color: #e6e6e6;
+  margin-right: 10px;
+}
+
+.tab-align .nav-pills .nav-item > .nav-link > img {
+  margin-right: 0.5rem;
+}
+.tab-align .nav-item.active,
+.tab-align .nav-item:hover {
+  background-color: #4db6ac;
+  color: #fff;
+}
+
+.holiday .nav-item,
+.holiday .nav-item:hover,
+.holiday .nav-item .nav-link.active,
+.holiday .nav-item:hover {
+  background-color: #4db6ac;
+  color: #fff;
+}
+.tab-align .nav-item > .nav-link,
+.tab-align .nav-item:hover > .nav-link,
+.tab-align .nav-item.active > .nav-link {
+  color: #fff;
+}
+.holiday .nav-item > .nav-link {
+  font-size: 0.835rem;
+  color: #454545;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link > span {
+  vertical-align: middle;
+}
+
+.nav-link {
+  display: block;
+  padding: 0;
+}
+
+h2.sub-heading {
+  color: #4db6ac;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.pkg-outer {
+  display: block;
+  background: #fff;
+  padding: 0.55rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pkg-outer:hover {
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.11);
+}
+
+.pkg-outer > img {
+  margin-bottom: 0.85rem;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pkg-outer:hover > img {
+  transform: scale(1.1);
+}
+
+.pkg-outer > h3 {
+  font-size: 1.125rem;
+}
+
+.pkg-outer .travel-valid {
+  font-size: 0.8125rem;
+  margin: 0;
+  line-height: 1rem;
+}
+
+.pkg-outer .price {
+  font-size: 1.15rem;
+  margin: 0;
+  line-height: 1.25rem;
+  text-align: right;
+}
+
+.pkg-outer .price > span {
+  font-size: 0.8125rem;
+}
+
+.pkg-outer .price > span.nights {
+  color: #4db6ac;
+  font-size: 1rem;
+  float: left;
+}
+
+.pkg-outer > .pkg-inclusion > span,
+.pkg-outer .travel-valid > span {
+  color: #4db6ac;
+}
+
+.pkg-outer > .btn-outline-info {
+  color: #4db6ac;
+  border-color: #4db6ac;
+  border-radius: 0;
+}
+
+.pkg-outer:hover .btn-outline-info,
+.pkg-outer .btn-outline-info:hover {
+  color: #fff;
+  border-color: #4db6ac;
+  background: #4db6ac;
+}
+
+.btn-info {
+  color: #fff;
+  border-color: #4db6ac;
+  background: #4db6ac;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #1f9489;
+  border-color: #1f9489;
+}
+
+.btn-info:focus,
+.btn-outline-info:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-more {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+picture.header-banner {
+  display: block;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.header-banner > img {
+  margin-top: -5%;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-banner > img {
+    margin-top: 0;
+  }
+  .view-btn {
+    right: 15%;
+  }
+  .tab-align .nav-pills .nav-item > .nav-link > img {
+    margin: 0;
+  }
+  .tab-align .nav-pills .nav-item > .nav-link {
+    display: inline-grid;
+    text-align: center;
+    justify-items: center;
+  }
+  .nav-link > span {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+  }
+}
+
+/* new css end --------------------------------------- */
+
+/*--------------owl-carousel previous and next buttons---------------*/
+
+.owl-carousel > .owl-nav > button.owl-prev,
+.owl-carousel > .owl-nav > button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4db6ac !important;
+  width: 2rem;
+  height: 2rem;
+  box-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.23);
+}
+
+.owl-carousel > .owl-nav {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.owl-carousel > .owl-nav > button:hover,
+.owl-carousel > .owl-nav > button:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.owl-carousel > .owl-nav > button.owl-prev {
+  left: -1rem;
+}
+
+.owl-carousel > .owl-nav > button.owl-next {
+  right: -1rem;
+}
+
+.owl-carousel > .owl-nav > button.owl-prev > span,
+.owl-carousel > .owl-nav > button.owl-next > span {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------owl-carousel previous and next buttons---------------*/
+
+.slider-outer {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.overlay-bg {
+  position: relative;
+  margin-bottom: 1.75rem;
+  box-shadow: 3px 3px 6px rgb(0 0 0 /0.175);
+  border: 1px solid #fff;
+}
+
+.overlay-bg > .over-img {
+  background: transparent;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 30%;
+  bottom: 30%;
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.overlay-bg:hover > .over-img {
+  left: 0.5rem;
+  right: 0.5rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  background: rgb(77 182 172 / 0.85);
+  background: rgb(43 53 69 / 0.85);
+}
+
+.overlay-bg > .over-img > a {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.overlay-bg:hover > .over-img > a {
+  opacity: 1;
+}
+
+.overlay-bg > h3.deal-heading {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.085rem;
+  font-weight: 600;
+  opacity: 1;
+  text-shadow: 0 0.335rem 0.375rem rgba(0, 0, 0, 0.55);
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.overlay-bg:hover > h3.deal-heading {
+  opacity: 0.11;
+  bottom: 70%;
+}
+
+.overlay-bg .btn {
+  border-radius: 0;
+}
+
+.section-block {
+  padding: 1.975rem 0;
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(215 244 240 / 0.25),
+    rgb(77 182 172 / 0.35)
+  );
+  background: linear-gradient(
+    to right,
+    rgb(215 244 240 / 0.25),
+    rgb(77 182 172 / 0.35)
+  );
+}
+
+#cruiseBG,
+#airfareBG,
+#hotdealBG {
+  background-image: url("../img/cruise-bg-image.jpg");
+  position: relative;
+  background-attachment: inherit;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#airfareBG {
+  background-image: url("../img/airfare-bg-image.jpg");
+}
+
+#hotdealBG {
+  background-image: url("../img/hotdeal-bg-image.jpg");
+}
+
+#cruiseBG .sub-heading,
+#airfareBG .sub-heading,
+#hotdealBG .sub-heading {
+  color: #3c3c3c;
+}
+
+/* goa deal page css */
+
+.paralH {
+  height: 18.75rem;
+  position: relative;
+  background-attachment: inherit;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+
+.parallax-gentingdreamcruise {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/cruise/genting-dream-cruise.jpg");
+  background-position: center;
+  height: 400px;
+}
+
+.parallaxhoneymoon {
+  background-image: url("../img/honeymoon-banner-og.jpg");
+  background-position: center;
+  height: 400px;
+}
+
+.parallaxGoa {
+  background-image: url("../img/goadeals-head.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.parallaxraddison {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/goa/rivaresorts%20goa.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.parallaxantara {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/goa/Antara-resort-1140.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.parallaxlemontree {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/goa/Antara-resort-1140.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.parallaxExMumbai {
+  background-image: url("../img/goa-ex-mumbai-head.jpg");
+}
+
+.parallaxDubai {
+  background-image: url("../img/dubaideals-banner.jpg");
+}
+
+.parallaxThailand-family {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/thailand/Thailand-tourism-.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.parallaxMalaysia-tourism {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/malasyia%20tourism/kuala-lumpur-twin-img.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxNCL-Cruise {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/cruise/ncl-offer-new.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxNCL-Cruisemobile {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/cruise/ncl-cruise-mobile-35.jpg");
+  background-size: contain;
+  height: 350px;
+}
+
+.parallaxMalaysia-airline {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/malasyia%20tourism/malaysia_international_banner.jpg");
+  background-size: cover;
+  height: 350px;
+}
+
+.parallaxThailand {
+  background-image: url("../img/thailanddeals-banner.jpg");
+}
+
+.parallaxSingapore {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/singapore/Singapore.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxMalaysia {
+  background-image: url("../img/malaysiadeals-banner.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxMaldives {
+  /* background-image: url("../img/maldivesdeals-banner.jpg"); */
+  background-image: url("../img/maldivesdeals-header.jpg");
+}
+
+.parallaxHK {
+  background-image: url("../img/hongkongdeals-banner.jpg");
+}
+
+.parallaxAustralia {
+  background-image: url("../img/australiadeals-banner.jpg");
+}
+
+.parallaxEurope {
+  background-image: url("../img/eurooedeals-banner.jpg");
+}
+
+.parallaxUsa {
+  background-image: url("../img/usadeals-banner.jpg");
+}
+
+.parallaxIndHoli {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/domestic/india-holiday-deal-top-banner.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxIntHoli {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/international-deal/international-holiday-bg.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxNepal {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/international-deal/nepal-pokhra.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxEngland {
+  background-image: url("../img/england-scotland-holiday-deals.jpg");
+  background-position: center center;
+}
+
+.parallaxLeMeridian {
+  height: 21.85rem;
+  background-image: url("../img/Le-Meridien-head.jpg");
+  background-position: bottom center;
+}
+
+.parallaxDubaiHoliday {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/dubai/dubai.jpg");
+  background-size: cover;
+  height: 450px;
+}
+
+.parallaxMemorableDubai {
+  background-image: url("../img/memorable-vacation-dubai-head.jpg");
+  background-position: center center;
+  height: 21.875rem;
+}
+
+.parallaxDazzlingDubai {
+  background-image: url("../img/dazzling-dubai-head.jpg");
+  background-position: center center;
+  height: 21.75rem;
+}
+
+.parallaxLeMeridian > .bg-head > img {
+  top: 15%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: invert(1);
+  /* height: 35px; */
+}
+
+.pkgBlock {
+  display: block;
+  border-bottom: 1px solid #c6c6c6;
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+h3.pkg-heading {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+.pkgBlock .btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #4db6ac;
+  border-color: #4db6ac;
+  padding: 0.235rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.pkgBlock .btn:hover {
+  color: #fff;
+  background: #4db6ac;
+}
+
+/* goa deal page css end */
+
+@media only screen and (max-width: 767px) {
+  .parallax {
+    height: 18.75rem;
+  }
+  .paralH {
+    height: 15.625rem;
+  }
+  .view-mob .owl-item > .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cruiseBG,
+  #airfareBG,
+  #hotdealBG {
+    background-attachment: fixed;
+  }
+  .overlay-bg {
+    margin-bottom: 0;
+  }
+  .overlay-bg > h3.deal-heading {
+    font-size: 1.5rem;
+  }
+  .overlay-bg:hover > h3.deal-heading {
+    bottom: 65%;
+  }
+  h3.pkg-heading {
+    font-size: 1.125rem;
+  }
+}
+
+/*other services css start*/
+
+.service-icon {
+  background: url(../img/dp-service-icons.png) no-repeat 0 0;
+}
+
+.icon-align {
+  width: 73px;
+  height: 73px;
+  display: block;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+
+.pkg-icon {
+  background-position: 0 0;
+}
+
+.flip-i:hover .pkg-icon-w {
+  background-position: 0 -81px;
+}
+
+.fly-icon {
+  background-position: -78px 0;
+}
+
+.flip-i:hover .fly-icon-w {
+  background-position: -78px -81px;
+}
+
+.htl-icon {
+  background-position: -157px 0;
+}
+
+.flip-i:hover .htl-icon-w {
+  background-position: -157px -81px;
+}
+
+.transfer-icon {
+  background-position: -236px 0;
+}
+
+.flip-i:hover .transfer-icon-w {
+  background-position: -236px -81px;
+}
+
+.bus-icon {
+  background-position: -473px 0;
+}
+
+.flip-i:hover .bus-icon-w {
+  background-position: -473px -81px;
+}
+
+.forex-icon {
+  background-position: -394px 0;
+}
+
+.flip-i:hover .forex-icon-w {
+  background-position: -394px -81px;
+}
+
+.circle-g {
+  border: 1px solid #a1a1a1;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  transition: all 0.65s ease;
+  -moz-transition: all 0.65s ease;
+  -webkit-transition: all 0.65s ease;
+  -o-transition: all 0.65s ease;
+}
+
+.flip-i:hover .circle-dg {
+  background: #5d5d5d;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  transition: all 0.65s ease;
+  -moz-transition: all 0.65s ease;
+  -webkit-transition: all 0.65s ease;
+  -o-transition: all 0.65s ease;
+}
+
+.icon-txt {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #a1a1a1;
+}
+
+.flip-i:hover .icon-txt {
+  color: #ff0254;
+  transition: all 0.65s ease;
+  -moz-transition: all 0.65s ease;
+  -webkit-transition: all 0.65s ease;
+  -o-transition: all 0.65s ease;
+}
+
+.m-mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20a {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .icon-txt {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #a1a1a1;
+  }
+  .ali-center {
+    float: none;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .mb80 {
+    margin-bottom: 0;
+  }
+}
+/*other services css end*/
+
+/*=======fancybox image gallery=======*/
+
+.gallery-bg {
+  background-color: #c5eaea;
+  padding: 2rem 0;
+}
+
+.srvc-img {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.srvc-img:before,
+.srvc-img:after {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.4s;
+  transition: opacity 0.3s, -webkit-transform 0.4s;
+  -o-transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s, -webkit-transform 0.4s;
+  z-index: 5;
+}
+
+.srvc-img:before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.srvc-img:after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+.srvc-img .srvc-inr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.srvc-img .srvc-ovrly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.srvc-img:hover:before,
+.srvc-img:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.srvc-img:hover .srvc-inr,
+.srvc-img:hover .srvc-ovrly {
+  opacity: 1;
+}
+
+/*======fancybox image gallery======*/
+
+@media (min-width: 768px) {
+  .static-link {
+    flex-basis: 23%;
+    font-size: 14px;
+    padding: 2px 0;
+  }
+}
+
+.theme-links {
+  position: relative;
+  font-size: 14px;
+}
+
+.theme-links-head {
+  cursor: pointer;
+  position: relative;
+  color: #313131;
+  font-weight: 600;
+}
+
+.theme-links-head svg {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  fill: var(--teal);
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.theme-links-head[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.sunway-hdr {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.adv_btn {
+  left: -2px;
+  top: 20px;
+  color: #fff;
+  border: 1px dashed #fff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 20%);
+  border-radius: 0;
+  position: relative;
+  padding: 4px 16px;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  overflow: hidden;
+  background: #f56d6d;
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
+
+.modal-dialog.mod-width {
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .sunway-hdr {
+    font-size: 20px;
+  }
+}
+
+/*new background-img css*/
+
+.parallaxNCL-joy {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/cruise/norwegian-joy.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxNCL-bliss {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20bliss/Norwegian-bliss.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.parallaxNCL-breakaway {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20breakaway/Norwegain-breakaway.jpg");
+  background-size: cover;
+}
+
+.paralaxNCL-epic {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20epic/norwegian-epic.jpg");
+  background-size: cover;
+}
+.paralaxNCL-escape {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegain%20escape/norwegian-escape.jpg");
+  background-size: cover;
+}
+.paralxNCL-gem {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20gem/Norwegian-gem.jpg");
+  background-size: cover;
+}
+.paralxNCL-getaway {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20getaway/norwegian-getaway.jpg");
+  background-size: cover;
+}
+.paralxNCL-jade {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20jade/Norwegian-jade-header-img.jpg");
+  background-size: cover;
+}
+.paralxNCL-pearl {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20pearl/Norwegian-pearl.jpg");
+  background-size: cover;
+}
+.paralxNCL-sky {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20sky/Norwegian-sky.jpg");
+  background-size: cover;
+}
+.paralxNCL-star {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/norwegian%20cruise/norwegian%20star/norwegian-star.jpg");
+  background-size: cover;
+}
+
+.paralx-Europe {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/europe/switzerland-europe.jpg");
+  background-size: cover;
+  height: 400px;
+}
+.paralx-best-of-PSN {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/europe/zurich-bnr-1.jpg");
+  background-size: cover;
+  height: 500px;
+}
+.paralx-european-charms {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/europe/switerland-european-romance.jpg");
+  background-size: cover;
+  height: 500px;
+}
+.paralx-jewels-of-europe {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/cruise/jewels-of-europe-banner.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-england-scotland {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/europe/london-bnr.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-sentosa-island {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/sentosa-island/zip-clif.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-sentosa-surprise {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/sentosa-island/sentosa-cruise-banner.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-funatsingapore {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/sentosa-island/sentosa-cable-car-banner.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-sentosa-fantasy {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/sentosa-island/sentosa-surprise-banner.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-air-asia {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/flights/independence-sale.jpg");
+  background-size: cover;
+  height: 400px;
+}
+.paralx-hot-deal {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/flights/new-banner-size.jpg");
+  background-size: cover;
+  height: 450px;
+}
+.paralx-moonsoon-sale {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/travel-sale/moonson-offer-banner.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.paralx-sentosa-resort-singapore {
+  background-image: url("https://cdn.dpauls.com/public/images/traveldeal/sentosa-island/resort-world-img-sentosa.jpg");
+  background-size: cover;
+  height: 400px;
+}
