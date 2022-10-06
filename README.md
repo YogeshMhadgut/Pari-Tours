@@ -1,2 +1,0 @@
-# Pari-Tours
-Travelling Wesite
